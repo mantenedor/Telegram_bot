@@ -50,30 +50,30 @@ function COMAND {
                         CHAT
                 fi
                 
-                if [[ "$TXT" = '"/start_all"' ]];then
-                        RESPOSTA="Ligando todos os servidores..."
-                        CHAT
-                        ./start_all.sh
-                        RESPOSTA=`cat .status_hw`
-                        sleep 60
-                        CHAT
-                fi
-                if [[ "$TXT" = '"/start_stg"' ]];then
-                        RESPOSTA="Ligando storage...."
-                        CHAT
-                        ./start_stg.sh
-                        RESPOSTA=`cat .status_hw`
-                        sleep 60
-                        CHAT
-                fi
-                if [[ "$TXT" = '"/start_hw1"' ]];then
-                        RESPOSTA="Ligando servidor hw1..."
-                        CHAT
-                        ./start_hw1.sh
-                        RESPOSTA=`cat .status_hw`
-                        sleep 60
-                        CHAT
-                fi
+                #if [[ "$TXT" = '"/start_all"' ]];then
+                #        RESPOSTA="Ligando todos os servidores..."
+                #        CHAT
+                #        ./start_all.sh
+                #        RESPOSTA=`cat .status_hw`
+                #        sleep 60
+                #        CHAT
+                #fi
+                #if [[ "$TXT" = '"/start_stg"' ]];then
+                #        RESPOSTA="Ligando storage...."
+                #        CHAT
+                #        ./start_stg.sh
+                #        RESPOSTA=`cat .status_hw`
+                #        sleep 60
+                #        CHAT
+                #fi
+                #if [[ "$TXT" = '"/start_hw1"' ]];then
+                #        RESPOSTA="Ligando servidor hw1..."
+                #        CHAT
+                #        ./start_hw1.sh
+                #       RESPOSTA=`cat .status_hw`
+                #        sleep 60
+                #        CHAT
+                #fi
                 if [[ "$TXT" = '"/status_hw"' ]];then
                         RESPOSTA="Isso pode demorar um pouco. Seja paciente. Verificando conectividade com os equipamentos..."
                         CHAT

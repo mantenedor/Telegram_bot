@@ -1,0 +1,14 @@
+Description=Bot maroto
+
+Wants=network.target
+After=syslog.target network-online.target
+
+[Service]
+Type=simple
+ExecStart=/opt/bot/bot.sh
+Restart=on-failure
+RestartSec=10
+KillMode=process
+
+[Install]
+WantedBy=multi-user.target

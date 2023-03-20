@@ -1,21 +1,21 @@
 # Telgram_bot
-Utilise o telgaram para aacionar comandos simples em equipamentos remotamente.
+Utilize o Telgaram para acionar comandos simples em equipamentos remotamente.
 
-Crie um bot no Telegram, substitua a variável "$TOKEN" pelo token do seu bot e acesso a url abaixo em seu navegador ou com o comando "curl":
+Crie um bot no Telegram, substitua a variável "$TOKEN" pelo token do seu bot e acesse a url abaixo em seu navegador ou com o comando "curl":
 # Getupdates
 https://api.telegram.org/bot$TOKEN/getupdates
 
-Você pode fazer um teste de envio com o cando baixo, substituindo as variáveis pelo token do seu bot e a mensagem que deseja enviar, erspectivamente:
+Você pode fazer um teste de envio com o cando baixo, substituindo as variáveis pelo token do seu bot, "chatid" e a mensagem que deseja enviar, respectivamente:
 # sendMessage
 ```
-curl -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" -d "chat_id=$CHATID&text=Mensagem"
+curl -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" -d "chat_id=$CHATID&text=$MENSAGEM"
 ```
 Saiba mais em: https://core.telegram.org/bots/api
 
-Agora você já pode descpbrir os "IDs" das mesnsagens qeu recebe.
+Agora você já pode descobrir os "IDs" das mesnsagens que recebe.
 
-Inclua os id dos remetentes autorizados em um arquivo de texto, separados por linha.
-Invorme o caminho absoluto deste arquivo assim como as demais variáveis no arquivo "bot.conf"
+Inclua os ids dos remetentes autorizados em um arquivo de texto, separados por linha.
+Informe o caminho absoluto deste arquivo, assim como as demais variáveis no arquivo "bot.conf"
 A variável "$SECURITYID" corresponde ao destinatário das mensagens de segurança, caso alguém não autorizado tente se comunicar com o bot.
 
 # Aplicação
@@ -44,7 +44,7 @@ O "/status_hw" corersponde ao comando cadastrado no bot do Telegram:
 
 ![image](https://user-images.githubusercontent.com/5191875/226203433-c5d62855-3003-40ab-8abf-321f48adbcbc.png)
 
-Você também pode incluir o seu bot num grupo, autorizando o id do grupo, subistituindo o sinal negativo(-) por um arroba(@) no seu arquivo de ids confiáveis e tera cesso a lista de comando para todos no grupo:
+Você também pode incluir o seu bot num grupo, autorizando o id do grupo, subistituindo o sinal negativo(-) por um arroba(@) no seu arquivo de ids confiáveis. Assim o grupo a que o bot pertence tera acesso á lista de comandos criados no bot:
 ![image](https://user-images.githubusercontent.com/5191875/226203713-9b17af77-362a-4435-a85a-36e94b83a8cd.png)
 
 # Serviço

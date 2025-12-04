@@ -5,7 +5,7 @@ Crie um bot no Telegram, substitua a variável "$TOKEN" pelo token do seu bot e 
 # Getupdates
 https://api.telegram.org/bot$TOKEN/getupdates
 
-Você pode fazer um teste de envio com o cando baixo, substituindo as variáveis pelo token do seu bot, "chatid" e a mensagem que deseja enviar, respectivamente:
+Você pode fazer um teste de envio com o comando abaixo, substituindo as variáveis pelo token do seu bot, "chatid" e a mensagem que deseja enviar, respectivamente:
 # sendMessage
 ```
 curl -X POST "https://api.telegram.org/bot$TOKEN/sendMessage" -d "chat_id=$CHATID&text=$MENSAGEM"
